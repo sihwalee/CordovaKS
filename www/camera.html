@@ -1,0 +1,23 @@
+	<div data-role="page" id="PhoneGap_Camera"  data-add-back-btn="true"> 
+	
+		<div data-role="header">
+			<h1>Camera</h1>
+		</div><!-- /header -->
+	
+		<div data-role="content">	
+
+		    <button onclick="capturePhoto();">Capture Photo</button>
+		    <button onclick="capturePhotoEdit();">Capture Editable Photo</button>
+		    <button onclick="getPhoto(Camera.PictureSourceType.PHOTOLIBRARY);">From Photo Library</button>
+		    <button onclick="getPhoto(Camera.PictureSourceType.SAVEDPHOTOALBUM);">From Photo Album</button>
+		    <img style="display:none;width:60px;height:60px;" id="smallImage" src="" /><br />
+		    <img style="display:none;width:100%" id="largeImage" src="" />
+
+
+    	</div><!-- /content -->
+	
+		<div data-role="footer">
+	        <h6>PhoneGap</h6>
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
